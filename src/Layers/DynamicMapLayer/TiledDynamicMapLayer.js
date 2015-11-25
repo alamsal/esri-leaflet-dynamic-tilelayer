@@ -38,7 +38,7 @@ EsriLeaflet.Layers.TiledDynamicMapLayer = L.TileLayer.extend({
   onRemove: function(map) {
     map.off('zoomstart zoomend', this._onZoomChange, this);
     L.TileLayer.prototype.onRemove.call(this, map);
-    EsriLeaflet.DynamicMapLayer.prototype.onRemove.call(this, map);
+    
   },
 
   /**
